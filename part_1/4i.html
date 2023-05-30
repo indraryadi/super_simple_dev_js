@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lesson 4</title>
+  <style>
+    .btn-add{
+      background-color: yellow;
+      border: solid 3px black;
+    }
+    .btn-buy{
+      background-color: orange;
+      border: solid 3px black;
+    }
+  </style>
+</head>
+<body>
+  <p>Adults Plain Cotton T-shirt</p> 
+  <p>Price: $7.99</p>
+  <button class="btn-add" onclick="add()">Add to cart</button>
+  <button class="btn-buy" onclick="buy()">Buy now</button>
+
+  <script>
+    const add = ()=>{alert('Added')}
+    const buy = ()=>{
+      console.log('Loading...')
+      alert('Purchased')
+    }
+  </script>
+</body>
+</html>
