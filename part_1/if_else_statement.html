@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+   <p>Choose your option:</p> 
+   <button onclick="getResult('Rock')">Rock</button>
+   <button onclick="getResult('Paper')">Paper</button>
+   <button onclick="getResult('Scissor')">Scissor</button>
+   <script>
+        const getRandom = (max) => {
+            return Math.floor(Math.random() * max)
+        }
+        
+        const data = ['Rock', 'Paper', 'Scissor']
+        
+        const getResult = (user) =>{
+            const computer = data[getRandom(3)] 
+
+            if(computer==='Rock' && user==='Scissor'){
+                alert(`You pick ${user}, Computer pick ${computer}, You Lose`)
+            }else if(computer==='Rock' && user==='Paper'){
+                alert(`You pick ${user}, Computer pick ${computer}, You Won`)
+            }else if(computer==='Scissor' && user==='Paper'){
+                alert(`You pick ${user}, Computer pick ${computer}, You Lose`)
+            }else if(computer==='Scissor' && user==='Rock'){
+                alert(`You pick ${user}, Computer pick ${computer}, You Win`)
+            }else if(computer==='Paper' && user==='Rock'){
+                alert(`You pick ${user}, Computer pick ${computer}, You Lose`)
+            }else if(computer==='Paper' && user==='Scissor'){
+                alert(`You pick ${user}, Computer pick ${computer}, You Win`)
+            }else{
+                alert(`You pick ${user}, Computer pick ${computer}, Draw`)
+            }
+        }
+        
+        
+   </script> 
+</body>
+</html>

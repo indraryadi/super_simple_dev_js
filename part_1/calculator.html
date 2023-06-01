@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <button onclick="clicked('7')">7</button>
+        <button onclick="clicked('8')">8</button>
+        <button onclick="clicked('9')">9</button>
+    </p>
+    <p>
+        <button onclick="clicked('4')">4</button>
+        <button onclick="clicked('5')">5</button>
+        <button onclick="clicked('6')">6</button>
+    </p>
+    <p>
+        <button onclick="clicked('1')">1</button>
+        <button onclick="clicked('2')">2</button>
+        <button onclick="clicked('3')">3</button>
+    </p>
+    <button onclick="clicked('+')">+</button>
+    <button onclick="clicked('-')">-</button>
+    <button onclick="result()" >=</button>
+    <button onclick="clearResult()">c</button>
+    <script>
+        let screen = ''
+        const clicked = (num)=>{
+            screen += num
+            console.log(screen)
+        }
+        const result = () => {
+            screen = eval(screen)
+            console.log(screen)
+        }
+        const clearResult = () => {
+            screen = ''
+            console.log('screen cleared')
+        }
+    </script>
+</body>
+</html>
