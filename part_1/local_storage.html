@@ -12,11 +12,11 @@
   <script>
     // let count = 0
     // let count = { data: 0 } 
-    let count = JSON.parse(localStorage.getItem('count'))
+    let count = JSON.parse(localStorage.getItem('count')) || { data: 0 }
 
-    if(count === null){
-      count = { data: 0 } 
-    }
+    // if(count === null){
+    //   count = { data: 0 } 
+    // }
     console.log(localStorage.getItem('count'))
     const btnHandler = () => {
       count.data += 1
