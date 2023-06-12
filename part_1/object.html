@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const data = {
+      name: 'kira',
+      age: 28,
+      role: [
+        'dev',
+        'trader',
+        'investor'
+      ],
+    }
+
+    //object to string
+    console.log(JSON.stringify(data))
+
+    // string to object
+    const dataString = JSON.stringify(data)
+    console.log(JSON.parse(dataString))
+
+  </script> 
+</body>
+</html>
